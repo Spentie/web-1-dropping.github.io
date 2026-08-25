@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*
+header, section, footer{
+    background-color: #d6ccc2;
+    border: 5px #9d8186 solid;
+    padding: 30px 50px;
+    margin: 30px;
+}
+*/
+header{
+    background-color: #231C1A;
+    height: 80px;
+    width: 100%;
+}
+h1{
+    position:absolute;
+    color: white;
+    left: 80px;
+    top: 0;
+    line-height: 80px; 
+    /*要將文字置中，在「絕對位置」的設定下只需與頁首高度相等即可 */
+    background-image: url("image1/Adobe Express - logo.png");
+    width: 150px;  
+    height: 80px; 
+    background-size: contain; /* 確保圖片縮放符合容器 */
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999%;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header ul{
+    position:absolute;
+    right: 1vw;
+    top:0;
+    line-height: 80px;
+}
+header li{
+    display: inline;
+    margin-right: 4vw; 
+}
+p{
+    font-size: 20px;
+}
+
+.murmur{
+    display: flex;
+
+    background-color: antiquewhite;
+    height: 110vh;
+    background-image: url("image1/IMG_4774.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.murmur h2{
+   line-height: 80px;
+}
+.murmur h3{
+    color: rgba(240, 248, 255, 0.521);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+.title h2{
+    color: beige;
+    background-color: rgb(16, 99, 27);
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.chosen{
+    display: flex;
+    /* height: 80vh; */
+    background-size: contain;
+    background-color: rgba(19, 55, 19, 0.693);
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 100px 180px 80px;
+}
+.chosen div{
+    width: 300px;
+    text-align: center;
+}
+.chosen img{
+    width: 100%;
+    border-radius: 10px;
+}
+.chosen div button{
+    background-color: rgba(60, 151, 60, 0);
+    color: rgb(234, 220, 199);
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 1.5em;
+    cursor: pointer;
+    border: 2px solid #231C1A;
+    border-radius: 10px;
+    padding: 10px;
+}
+.chosen div button:active{
+    transform: scale(0.95);
+}
+footer{
+    background-color:rgb(95, 160, 143);
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* 響應式設計語法 */
+@media (max-width: 768px){
+    header ul{
+        display: none;
+    }
+    header h1{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .murmur h2{
+        font-size: 40px;
+    }
+}
